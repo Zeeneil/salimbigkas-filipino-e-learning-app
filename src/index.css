@@ -31,10 +31,10 @@ body {
   min-height: 100vh;
 }
 
-h1 {
+/* h1 {
   font-size: 3rem;
   line-height: 3.5rem;
-}
+} */
 
 button {
   border-radius: 8px;
@@ -45,7 +45,7 @@ button {
   font-family: inherit;
   /* background-color: #2C3E50; */
   cursor: pointer;
-  filter: drop-shadow(var(--drop-shadow-xl));
+  /* filter: drop-shadow(var(--drop-shadow-xl)); */
 }
 /* button:hover {
   font-weight: 500;

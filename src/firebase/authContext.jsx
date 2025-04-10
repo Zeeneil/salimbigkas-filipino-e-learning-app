@@ -26,6 +26,7 @@ const AuthProvider=({ children })=> {
     try {
       if (user) {
         setCurrentUser({...user});
+        console.log('User logged in:', user);
         const isEmail = user.providerData.some(
           (provider) => provider.providerId === 'password'
         );
@@ -63,7 +64,7 @@ const AuthProvider=({ children })=> {
   return (
     <AuthContext.Provider value={value}>
       {loading ? (
-        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
+        <div className="flex justify-center items-center h-screen bg-white">
           <svg
             className="animate-spin"
             xmlns="http://www.w3.org/2000/svg"

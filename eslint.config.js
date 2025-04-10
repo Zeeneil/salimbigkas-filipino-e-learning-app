@@ -5,6 +5,7 @@ import reactRefresh from 'eslint-plugin-react-refresh';
 import react from 'eslint-plugin-react';
 
 export default [
+  { darkMode: ['class'] },
   { ignores: ['dist'] },
   {
     files: ['**/*.{js,jsx}'],

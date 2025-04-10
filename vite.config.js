@@ -9,18 +9,11 @@ export default defineConfig({
     tailwindcss(),
     react()
   ],
-  css: {
-    postcss: {
-      plugins: [
-        autoprefixer()
-      ]
-    }
-  },
   server: {
     open: true
   },
-  // base: '/https://Zeeneil.github.io/salimbigkas-filipino-e-learning-app/',  // Add your repo name here
-  // build: {
-  //   outDir: 'dist',
-  // },
+  base: process.env.NODE_ENV === 'production' ? '/salimbigkas-filipino-e-learning-app/' : '/', // Replace with your repo name
+  build: {
+    outDir: 'dist',
+  },
 });
